@@ -1,0 +1,205 @@
+
+ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+header{
+    background-color: #F29441;
+    position: sticky;
+    top: 0px;
+    margin: -5px;
+    padding: 15px;
+    border: solid 2px;
+}
+
+footer{
+    background-color: #F29441;
+    margin: -5px;
+    padding: 15px;
+    border: solid 2px;
+}
+
+body{
+    background-color: #D9AD77;
+    font-family:  "Roboto", sans-serif;
+}
+
+main{
+    margin: -5px;
+    padding: 15px;
+    border: solid 2px;
+}
+
+
+/* ESTILOS GENERALES*/
+
+.header div h1{
+    font-family: "Lugrasimo", cursive;
+    color: #012626;
+    
+}
+
+.header div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .nav-contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.header .nav-contenedor ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .nav-contenedor ul li{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    border: outset;
+    border-radius: 5px;
+    background-color: rgb(255, 196, 0);
+    padding: 2px;
+}
+
+
+.footer p, .footer a{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.footer div ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 5px;
+}
+
+.grid-item{
+    width: 20vw;
+    height: 25vh;
+    border: 2px solid black;
+    padding: 1px;
+    transition: transform 0.3s ease;
+    box-shadow: 5px 5px 5px black;
+}
+
+.grid-item iframe{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px); 
+}
+
+
+/* ESTILOS POR CLASE*/
+
+#main-header img{
+    margin-left: 24vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+#main-header{
+    margin-bottom: 5vh;
+}
+
+#texto-main p{
+    display: flex;
+    justify-content: center;
+}
+
+#img-nosotros{
+    margin-left: 24vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+#reseñas h2{
+    display: flex;
+    justify-content: center;
+    font-size: 5vh;
+}
+
+#productos {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+#contacto {
+    display: flex;
+    justify-content: center;
+}
+
+#main-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-signin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* ESTILOS POR ID*/
+
+
+
+
+@media (max-width: 768px){
+    .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1%;
+    }
+    #contacto form div textarea{
+        width: 25vw;
+        height: 10vh;
+    }
+    #contacto form div input{
+        width: 25vw;
+    }
+    #form-login form div input{
+        width: 25vw;
+    }
+    #form-registro form div input{
+        width: 25vw;
+    }
+    #productos{
+        flex-direction: column;
+
+    }
+
+}
+
+
+
+
+
+
